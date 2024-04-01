@@ -16,7 +16,7 @@ $$\begin{aligned}
     \sin(\psi) &= \sin(90+i - x) \\
            &= \sin(90+i)\cos(x) - \cos(90+i)\sin(x) \\\
            &= \big(\sin(90)\cos(i) + \cos(90)\sin(i) \big)\cos(x) \\
-           &= -\big(\cos(90)\cos(i) = \sin(90)\sin(i) \big)\sin(x) \\
+           &= -\big(\cos(90)\cos(i) - \sin(90)\sin(i) \big)\sin(x) \\
            &= \cos(i)\cos(x) + \sin(i)\sin(x). \\
 \end{aligned}$$
 
