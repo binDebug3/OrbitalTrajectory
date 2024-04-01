@@ -13,8 +13,7 @@ Here is a detailed derivartion of the equations used in this project. Every symb
  These equations will also be in the $\LaTeX$ write-up. We will first derive $\sin(\psi)$ and $\cos(\psi)$ in terms of $i$ and $x$, and then further derive what those equations are. We first derive $\sin(\psi)$:
 
 $$\begin{aligned}
-
-\sin(\psi) &= \sin(90+i - x) \\
+    \sin(\psi) &= \sin(90+i - x) \\
            &= \sin(90+i)\cos(x) - \cos(90+i)\sin(x) \\\
            &= \big(\sin(90)\cos(i) + \cos(90)\sin(i) \big)\cos(x) \\
            &= -\big(\cos(90)\cos(i) = \sin(90)\sin(i) \big)\sin(x) \\
