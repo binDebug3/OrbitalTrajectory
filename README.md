@@ -148,8 +148,8 @@ where
 Plugging these values into the Hamiltonian equation, we get
 
 $$\begin{aligned}
-    H = p_1x' + p_2y' &+ p_3\left(G M_e m_rx \,+\, GM_mm_r \left|L_m - x\right| + u_x\right) \\&
-    + p_4\left(GM_em_ry + GM_m m_r \left|y\right| + u_y\right) - u_x^2 - u_y^2 \\
+    H = p_1x' + p_2y' &+ p_3\left(G M_e m_rx \,+\, GM_mm_r \left|L_m - x\right| + u_x\right) \\
+    &+ p_4\left(GM_em_ry + GM_m m_r \left|y\right| + u_y\right) - u_x^2 - u_y^2 \\
 \end{aligned}$$
 
 We now derive the necessary equations for the PMP. We first derive the necessary equations for the adjoint equations (co-state evolution). We have
