@@ -131,8 +131,8 @@ $$\begin{aligned}
 We define $x''$ and $y''$ to be the acceleration in the $x$ and $y$ directions, respectively. We define these to be
 
 $$\begin{aligned}
-    x'' &= G M_e m_rx \,+\, GM_mm_r \left|L_m - x\right| + u_x \\
-    y'' &= GM_em_ry + GM_m m_r \left|y\right| + u_y.
+    x'' &= -\frac{G M_e x}{(x^2 + y^2)^{3/2}} \, + \, \frac{GM_m(L_m - x)}{((L_m - x)^2 + y^2)^{3/2}} + \frac{u_x}{m_r} \\
+    y'' &= -\frac{GM_e y}{(x^2 + y^2)^{3/2}} \, - \, \frac{GM_m y}{((L_m-x)^2 +y^2)^{3/2}} + \frac{u_y}{m_r}.
 \end{aligned}$$
 
 where 
@@ -148,17 +148,21 @@ where
 Plugging these values into the Hamiltonian equation, we get
 
 $$\begin{aligned}
-    H = p_1x' + p_2y' &+ p_3\left(G M_e m_rx \,+\, GM_mm_r \left|L_m - x\right| + u_x\right) \\
-    &+ p_4\left(GM_em_ry + GM_m m_r \left|y\right| + u_y\right) - u_x^2 - u_y^2 \\
+    H = p_1x' + p_2y' - &p_3\left(\frac{G M_e x}{(x^2 + y^2)^{3/2}} - \frac{GM_m(L_m - x)}{((L_m - x)^2 + y^2)^{3/2}} - \frac{u_x}{m_r}\right) \\
+    &- p_4\left(\frac{GM_e y}{(x^2 + y^2)^{3/2}} + \frac{GM_m y}{((L_m-x)^2 +y^2)^{3/2}} - \frac{u_y}{m_r}\right) - u_x^2 - u_y^2.
 \end{aligned}$$
 
 We now derive the necessary equations for the PMP. We first derive the necessary equations for the adjoint equations (co-state evolution). We have
 
 $$\begin{aligned}
-    \dot{p}_1 &= -\frac{\partial H}{\partial x} = -p_3\left(G M_e m_r + GM_m m_r\right) - p_3\text{sign}(L_m - x)GM_m m_r \\
-    \dot{p}_2 &= -\frac{\partial H}{\partial y} = -p_4GM_em_r - p_4\text{sign}(y)GM_m m_r \\
-    \dot{p}_3 &= -\frac{\partial H}{\partial x'} = -p_1 \\
-    \dot{p}_4 &= -\frac{\partial H}{\partial y'} = -p_2.
+    \dot{p}_1 = -\frac{\partial H}{\partial x} = \;&p_3\left(\frac{3GM_m(L-x)^2}{\big((L-x)^2 + y^2\big)^4} - \frac{GM_m}{2\big((L-x)^2 + y^2 \big)^3} + \frac{3GM_e x^2}{\big(x^2+y^2\big)^{5/2}} - \frac{GM_e}{\big(x^2 + y^2\big)^{3/2}} \right) \\
+        &\;+p_4\left(\frac{-3GM_m(L-x)y}{((L-x)^2+y^2)^4} + \frac{3GM_e xy}{(x^2+y^2)^{5/2}} \right) \\
+    
+    \dot{p}_2 = -\frac{\partial H}{\partial y} = &\;p_4\left(\frac{3GM_m y^2}{\big((L-x)^2+y^2\big)^4} - \frac{GM_m}{2\big((L-x)^2+y^2\big)^3} + \frac{3GM_e y^2}{\big(x^2+y^2\big)^{5/2}} - \frac{GM_e}{\big(x^2+y^2\big)^{3/2}} \right) \\
+    &\;+p_3\left(\frac{-3GM_m (L-x)y}{((L-x)^2+y^2)^4} + \frac{3GM_e xy}{(x^2+y^2)^{5/2}} \right) \\
+        
+    \dot{p}_3 = -\frac{\partial H}{\partial x'} = \;&-p_1 \\
+    \dot{p}_4 = -\frac{\partial H}{\partial y'} = \;&-p_2.
 \end{aligned}$$
 
 
