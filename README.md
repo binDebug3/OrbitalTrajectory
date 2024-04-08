@@ -155,11 +155,11 @@ $$\begin{aligned}
 We now derive the necessary equations for the PMP. We first derive the necessary equations for the adjoint equations (co-state evolution). We have
 
 $$\begin{aligned}
-    \dot{p}_1 = -\frac{\partial H}{\partial x} = \;&p_3\left(\frac{3GM_m(L-x)^2}{\big((L-x)^2 + y^2\big)^4} - \frac{GM_m}{2\big((L-x)^2 + y^2 \big)^3} + \frac{3GM_e x^2}{\big(x^2+y^2\big)^{5/2}} - \frac{GM_e}{\big(x^2 + y^2\big)^{3/2}} \right) \\
-        &\;+p_4\left(\frac{-3GM_m(L-x)y}{((L-x)^2+y^2)^4} + \frac{3GM_e xy}{(x^2+y^2)^{5/2}} \right) \\
+    \dot{p}_1  = -\frac{\partial H}{\partial x}  = &-p_3\left(\frac{3GM_m(L_m - x)^2}{\left((L_m - x)^2 + y^2\right)^{5/2}} - \frac{GM_m}{\left((L_m - x)^2 + y^2 \right)^{3/2}} + \frac{3GM_ex^2}{(x^2 + y^2)^{5/2}} - \frac{GM_e}{(x^2+y^2)^{3/2}}\right) \\
+    &\;-p_4\left(\frac{-3GM_m(L_m - x)y}{\left((L_m - x)^2 + y^2\right)^{5/2}} + \frac{3GM_e xy}{(x^2 + y^2)^{5/2}} \right) \\
     
-    \dot{p}_2 = -\frac{\partial H}{\partial y} = &\;p_4\left(\frac{3GM_m y^2}{\big((L-x)^2+y^2\big)^4} - \frac{GM_m}{2\big((L-x)^2+y^2\big)^3} + \frac{3GM_e y^2}{\big(x^2+y^2\big)^{5/2}} - \frac{GM_e}{\big(x^2+y^2\big)^{3/2}} \right) \\
-    &\;+p_3\left(\frac{-3GM_m (L-x)y}{((L-x)^2+y^2)^4} + \frac{3GM_e xy}{(x^2+y^2)^{5/2}} \right) \\
+    \dot{p}_2 =  -\frac{\partial H}{\partial x} = &-p_3\left(\frac{-3GM_m(L_m-x)y}{((L_m-x)^2 + y^2)^{5/2}} + \frac{3GM_exy}{(x^2 + y^2)^{5/2}}\right) \\
+    &\;- p_4\left(\frac{3GM_my^2}{((L_m-x)^2 + y^2)^{5/2}} - \frac{GM_m}{((L_m-x)^2 + y^2)^{3/2} } + \frac{3GM_ey^2}{(x^2 + y^2)^{5/2}} - \frac{GM_e}{(x^2 + y^2)^{3/2}} \right)  \\
         
     \dot{p}_3 = -\frac{\partial H}{\partial x'} = \;&-p_1 \\
     \dot{p}_4 = -\frac{\partial H}{\partial y'} = \;&-p_2.
