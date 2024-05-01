@@ -46,7 +46,9 @@ $$
 J[\mathbf{u}] = \int_{0}^{t_f}\frac{c}{2}\|\mathbf{u}(t)\|^2 dt
 $$
 
-where we can interpret $$\mathbf{u} = \begin{bmatrix} u_x & u_y \end{bmatrix}$$ as the thrust in the $x$- and $y$-directions, respectively. We also define our initial conditions as
+where we can interpret 
+$$\mathbf{u} = \begin{bmatrix} u_x & u_y \end{bmatrix}$$
+as the thrust in the $x$- and $y$-directions, respectively. We also define our initial conditions as
 
 $$\begin{aligned}
     x(0) &= R_e, &&x(t_f) = L_m\cos(\theta) + (R_m + h_f)\cos(90 + \theta) \\
