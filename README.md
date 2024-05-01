@@ -42,9 +42,9 @@ Unless otherwise specified, we define the units for this project as follows:
 
 We seek to find the optimal thrust for a rocket to leave Earth and begin orbiting the moon. To do so, we set up our cost functional as
 
-\[
-J[\mathbf{u}] = \int_{0}^{t_f}\frac{c}{2}\lVert \mathbf{u}(t)\rVert^2 dt
-\]
+$$
+J[\mathbf{u}] = \int_{0}^{t_f}\frac{c}{2}\|\mathbf{u}(t)\|^2 dt
+$$
 
 where we can interpret $\textbf{u} = \begin{bmatrix}u_x & u_y\end{bmatrix}$ as the thrust in the $x$- and $y$-directions, respectively. We also define our initial conditions as
 
