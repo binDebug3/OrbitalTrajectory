@@ -122,14 +122,11 @@ We now derive the necessary equations for the PMP. We first derive the necessary
 
 $$\begin{aligned}
     \dot{p}_1  = -\frac{\partial H}{\partial x}  
-    
     = &-p_3\left(\frac{3GM_m(L_x - x)^2}{\left((L_x - x)^2 + (L_y - y)^2\right)^{5/2}} - \frac{GM_m}{\left((L_x - x)^2 + (L_y - y)^2 \right)^{3/2}} + \frac{3GM_ex^2}{(x^2 + y^2)^{5/2}} - \frac{GM_e}{(x^2+y^2)^{3/2}}\right) \\
     &\;-p_4\left(\frac{-3GM_m(L_x - x)(L_y - y)}{\left((L_x - x)^2 + (L_y - y)^2\right)^{5/2}} + \frac{3GM_e xy}{(x^2 + y^2)^{5/2}} \right) \\
-    
     \dot{p}_2 =  -\frac{\partial H}{\partial y} = 
     &-p_3\left(\frac{3GM_m(L_x-x)(L_y - y)}{((L_x-x)^2 + (L_y - y)^2)^{5/2}} + \frac{3GM_exy}{(x^2 + y^2)^{5/2}}\right) \\
     &\;- p_4\left(\frac{-3GM_m(L_y - y)^2}{((L_x-x)^2 + (L_y - y)^2)^{5/2}} + \frac{GM_m}{((L_x-x)^2 + (L_y - y)^2)^{3/2} } + \frac{3GM_ey^2}{(x^2 + y^2)^{5/2}} - \frac{GM_e}{(x^2 + y^2)^{3/2}} \right)  \\
-        
     \dot{p}_3 = -\frac{\partial H}{\partial x'} = \;&-p_1 + \frac{c A \rho(x,y)x^{\prime}}{m_r}\\
     \dot{p}_4 = -\frac{\partial H}{\partial y'} = \;&-p_2 + \frac{c A \rho(x,y)y^{\prime}}{m_r}.
 \end{aligned}$$
