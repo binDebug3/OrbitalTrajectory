@@ -47,7 +47,11 @@ J[\mathbf{u}] = \int_{0}^{t_f}\frac{c}{2}\|\mathbf{u}(t)\|^2 dt
 $$
 
 where we can interpret 
-$$\mathbf{u} = \begin{bmatrix} u_x & u_y \end{bmatrix}$$
+
+$$
+\mathbf{u} = \begin{bmatrix} u_x & u_y \end{bmatrix}
+$$
+
 as the thrust in the $x$- and $y$-directions, respectively. We also define our initial conditions as
 
 $$\begin{aligned}
